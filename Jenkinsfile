@@ -10,7 +10,8 @@ pipeline {
 	stage('Deploy') {
 		echo "Deploy"
 	}	
-	} post {
+	} 
+	post {
 		always {
 			echo "I'm awesome I run always"
 		}
