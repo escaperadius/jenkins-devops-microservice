@@ -55,7 +55,7 @@ pipeline {
 			echo "Push Docker Image"
 			//docker build -t escaperadius/micro-currency-exchange:$env:BUILD_TAG
 			script {
-				docker.withRegistry('', 'dockerHub') {
+				docker.withRegistry('', 'dockerhub') {
 					dockerImage.push();
 					dockerImage.push('latest');				
 				}
