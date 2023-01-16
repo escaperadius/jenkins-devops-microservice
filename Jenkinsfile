@@ -46,14 +46,14 @@ pipeline {
 			echo "Build Docker Image"
 			//docker build -t escaperadius/currency-exchange-devops:$env:BUILD_TAG
 			script {
-				dockerImage = docker.build("escaperadius/currency-exchange-devops:${env:BUILD_TAG}")
+				dockerImage = docker.build("escaperadius/micro-currency-exchange:${env:BUILD_TAG}")
 			}
 		}
 	}	
 	stage('Push Docker Image') {
 		steps {
 			echo "Push Docker Image"
-			//docker build -t escaperadius/currency-exchange-devops:$env:BUILD_TAG
+			//docker build -t escaperadius/micro-currency-exchange:$env:BUILD_TAG
 			script {
 				docker.withRegistry('', 'dockerHub') {
 					dockerImage.push();
