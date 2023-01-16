@@ -8,7 +8,7 @@
 	<artifactId>micro-currency-exchange</artifactId>
 	<version>0.0.1-SNAPSHOT</version> 
 	<packaging>jar</packaging>
-	<name>currency-exchange</name>
+	<name>micro-currency-exchange</name>
 
 	<description>Demo project for Spring Boot</description>
 
